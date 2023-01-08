@@ -9,3 +9,5 @@ export { default as review } from './images/review.jpeg';
 // blog images
 export { default as blogSlugBg } from './images/slug-bg.jpeg'
 export { default as blogFeature } from './images/feature-image.jpeg'
+// article images
+export { default as articleImage } from './images/article-image.jpeg'

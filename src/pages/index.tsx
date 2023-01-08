@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import HomeModule from '../modules/home/Home'
+import { HomeModule } from '../modules/export'
 export default function Home() {
   return (
     <>

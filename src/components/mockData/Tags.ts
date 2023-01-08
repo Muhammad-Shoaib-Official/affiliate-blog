@@ -1,4 +1,4 @@
-import { art, cosmatics, eco, idea, interior, life, review } from "../../../public/export";
+import { art, cosmatics, eco, idea, interior, life, review } from "../../../public/assets/export";
 
 export const TagsList = [
     {

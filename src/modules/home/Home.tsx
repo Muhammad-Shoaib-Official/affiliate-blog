@@ -3,10 +3,12 @@ import { TextField, Box, Typography, Stack } from '@mui/material'
 import { Category, TopBar } from '../../components/export'
 import { Search } from '@mui/icons-material';
 import { TagsList } from '../../components/mockData/Tags';
+//bg image import 
+import { blogSlugBg } from '../../../public/assets/export';
 
 const HomeModule = () => {
     return (
-        <Box className='home'>
+        <Box className='home' sx={{ backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 1)), url(${blogSlugBg.src})`, }}>
             {/* topbar */}
             <TopBar />
             {/* header */}

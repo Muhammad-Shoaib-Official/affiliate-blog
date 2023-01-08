@@ -2,15 +2,11 @@ import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 // image imports
-import { blogSlugBg, blogFeature } from "../../../public/assets";
+import { blogFeature, blogSlugBg } from "../../../public/assets/export";
 // components imports
 import Container from "../../components/container";
 import { Tags } from "../../components/export";
 // icon imports
-// import FacebookIcon from "@mui/icons-material/Facebook";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
 import { LinkedIn, Twitter, Facebook } from "@mui/icons-material";
 
 export default function BlogSlugModule() {
@@ -19,7 +15,7 @@ export default function BlogSlugModule() {
       <Box
         component="main"
         className="page-top"
-        style={{
+        sx={{
           backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 1)), url(${blogSlugBg.src})`,
         }}
       >

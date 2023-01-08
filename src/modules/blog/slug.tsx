@@ -1,8 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Box, List, ListItemIcon, Typography } from "@mui/material";
 import React from "react";
-import { blogSlugBg } from "../../../public/assets";
+import Image from "next/image";
+// image imports
+import { blogSlugBg, blogFeature } from "../../../public/assets";
+// components imports
 import Container from "../../components/container";
-import {Tags} from "../../components/export";
+import { Tags } from "../../components/export";
+// icon imports
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function BlogSlugModule() {
   return (
@@ -28,16 +35,37 @@ export default function BlogSlugModule() {
               Vestibulum ante ipsum primis in faucibus.
             </Typography>
             <Box className="tags">
-            {
-                ["lifestyle", "eco", "business"].map((tag,i)=>(
-                    <Tags name={tag} key={i}/>
-                ))
-            }
+              {["lifestyle", "eco", "business"].map((tag, i) => (
+                <Tags name={tag} link={`#`} key={i} />
+              ))}
             </Box>
-           <hr className=""/>
+            <hr className="borderline" />
 
+            <List className="social">
+              <ListItemIcon>
+                <TwitterIcon />
+              </ListItemIcon>
+              <ListItemIcon>
+                <FacebookIcon />
+              </ListItemIcon>
+              <ListItemIcon>
+                <LinkedInIcon />
+              </ListItemIcon>
+            </List>
           </Container>
         </section>
+      </Box>
+      {/* feature image */}
+      <section className="featureImage">
+        <Image src={blogFeature} alt={`feature image`} />
+      </section>
+      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
+        <Box gridColumn="span 8">
+          
+        </Box>
+        <Box gridColumn="span 4">
+          
+        </Box>
       </Box>
     </>
   );

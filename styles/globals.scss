@@ -59,3 +59,20 @@ a {
     background: rgba(89, 89, 89, 0.2);
     border: none;
 }
+
+.tag{
+    background: #ebebeb;
+    padding: 8px 1rem;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    a{
+        color: #313131;
+    }
+    &:hover{
+        background: #F9C346;
+    }
+}

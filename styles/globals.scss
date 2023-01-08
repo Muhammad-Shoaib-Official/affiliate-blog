@@ -1,6 +1,12 @@
 @import './import.scss';
 @import './variables.scss';
 
+// imports font 
+@font-face {
+    font-family: fraunces;
+    src: url('../public/assets//fonts/Fraunces-SemiBold.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,4 +33,28 @@ a {
 
 .color-gray {
     color: $color-gray !important;
+}
+
+.main-heading {
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    line-height: 4.5rem;
+}
+
+.page-top {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.borderline {
+    padding: .6px;
+    background: rgba(89, 89, 89, 0.2);
+    border: none;
 }

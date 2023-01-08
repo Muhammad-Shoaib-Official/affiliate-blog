@@ -7,9 +7,11 @@ import { blogSlugBg, blogFeature } from "../../../public/assets";
 import Container from "../../components/container";
 import { Tags } from "../../components/export";
 // icon imports
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import { LinkedIn, Twitter, Facebook } from "@mui/icons-material";
 
 export default function BlogSlugModule() {
   return (
@@ -43,13 +45,13 @@ export default function BlogSlugModule() {
 
             <List className="social">
               <ListItemIcon>
-                <TwitterIcon />
+                <Twitter />
               </ListItemIcon>
               <ListItemIcon>
-                <FacebookIcon />
+                <Facebook />
               </ListItemIcon>
               <ListItemIcon>
-                <LinkedInIcon />
+                <LinkedIn />
               </ListItemIcon>
             </List>
           </Container>
@@ -61,10 +63,10 @@ export default function BlogSlugModule() {
       </section>
       <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
         <Box gridColumn="span 8">
-          
+
         </Box>
         <Box gridColumn="span 4">
-          
+
         </Box>
       </Box>
     </>

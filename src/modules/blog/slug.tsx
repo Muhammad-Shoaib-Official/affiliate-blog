@@ -57,14 +57,35 @@ export default function BlogSlugModule() {
       <section className="featureImage">
         <Image src={blogFeature} alt={`feature image`} />
       </section>
-      <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
-        <Box gridColumn="span 8">
+      <Container>
+        <Box
+          className="single-blog-article"
+          display="grid"
+          gridTemplateColumns="repeat(12, 1fr)"
+          gap={2}
+        >
+          <Box className="articale" gridColumn="span 8">
+            <article>
+              <p>
+                Morbi ac nulla felis. Vestibulum maximus, mi eget finibus
+                commodo, tellus ligula ultrices mauris, at condimentum erat
+                risus id ante. Nullam pulvinar lorem eget luctus vestibulum.
+                Vestibulum volutpat malesuada ante, eget tempor massa. Quisque
+                maximus sagittis suscipit. Vivamus placerat, magna eget pulvinar
+                sodales, sem nibh elementum justo, ac elementum ipsum lacus non
+                tellus. In hac habitasse platea dictumst.
+                <ul>
+                  <li>Proin magna dolor, vestibulum vitae orci dapibus, commodo eleifend nulla. Integer tincidunt dictum neque ac tempus.</li>
+                </ul>
+              </p>
+            </article>
+          </Box>
+          <Box className="sidebar" gridColumn="span 4">
+            <aside>sidebar</aside>
 
+          </Box>
         </Box>
-        <Box gridColumn="span 4">
-
-        </Box>
-      </Box>
+      </Container>
     </>
   );
 }

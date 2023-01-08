@@ -10,7 +10,7 @@ const TopBar = () => {
     const { menuList, Logo } = home;
     return (
         <>
-            <Stack sx={{ flexDirection: { xs: "column", md: "row" } }} justifyContent="space-between" alignItems="center">
+            <Stack className='top-bar section-padding' sx={{ flexDirection: { xs: "column", md: "row" } }} justifyContent="space-between" alignItems="center">
                 <Box sx={{ display: "flex", alignItems: "center", gap: 3.5 }}>
                     <Box>
                         <Image src={Logo} alt={"logo"} width={20} height={20} />

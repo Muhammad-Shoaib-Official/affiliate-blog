@@ -1,8 +1,30 @@
 @import './import.scss';
+@import './variables.scss';
+
 body {
+    margin: 0;
+    padding: 0;
     // background-color: red !important;
 }
+
 a {
     text-decoration: none !important;
     color: inherit;
+}
+
+.section-padding {
+    padding: 0 2rem !important;
+}
+
+// colors
+.color-black {
+    color: $color-black !important;
+}
+
+.color-white {
+    color: $color-white !important;
+}
+
+.color-gray {
+    color: $color-gray !important;
 }

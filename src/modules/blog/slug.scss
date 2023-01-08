@@ -11,4 +11,26 @@
         color: #313131;
         line-height: 1.8rem;
     }
+    .tags{
+        display: flex;
+        gap: .6rem;
+        margin-top: 1.5rem;
+        .tag{
+            background: #ebebeb;
+            padding: 10px 1.2rem;
+            border-radius: 50px;
+            text-transform: capitalize;
+            font-size: .9rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+            a{
+                color: #313131;
+            }
+            &:hover{
+                background: #F9C346;
+            }
+        }
+    }
+    
 }

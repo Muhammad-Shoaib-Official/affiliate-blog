@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { blogSlugBg } from "../../../public/assets";
 import Container from "../../components/container";
+import {Tags} from "../../components/export";
 
 export default function BlogSlugModule() {
   return (
@@ -26,6 +27,15 @@ export default function BlogSlugModule() {
               felis libero, congue quis ipsum et, lacinia maximus eros.
               Vestibulum ante ipsum primis in faucibus.
             </Typography>
+            <Box className="tags">
+            {
+                ["lifestyle", "eco", "business"].map((tag,i)=>(
+                    <Tags name={tag} key={i}/>
+                ))
+            }
+            </Box>
+           <hr className=""/>
+
           </Container>
         </section>
       </Box>

@@ -1,0 +1,1 @@
+export {default as blogSlugBg} from './images/slug-bg.jpeg'

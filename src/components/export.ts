@@ -1,4 +1,12 @@
 export { default as TopBar } from "./top-bar/TopBar";
-export { default as Category } from './category/Category'
 export { default as Container } from "./container"
 export { default as Tags } from "./tags"
+export { default as FeaturedPost } from "./featuredPost"
+export { default as Header } from "./header"
+export { default as NewPost } from "./newPost"
+export { default as NewsLetter } from "./newsLetter"
+export { default as PopularCategories } from "./popularCategories"
+export { default as GlobalSubtitle } from "./globalSubtitle"
+export { default as Previousposts } from "./previousposts"
+export { default as LikePosts } from "./likePosts"
+export { default as Footer } from "./footer"

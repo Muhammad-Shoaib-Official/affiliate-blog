@@ -1,15 +1,19 @@
-import { Box, Link } from '@mui/material'
-import React from 'react'
-
-interface slugProps {
-  name: string;
-  link: string;
+import { Stack } from '@mui/material'
+import React, { FC } from 'react'
+import Tag from './Tag'
+interface ITag {
+  tag: string,
+  link: string
 }
-
-export default function Tags({ name, link }: slugProps) {
+const Tags: FC<{ tagList: ITag[] }> = (props) => {
+  const { tagList = [] } = props;
   return (
-    <Box className='tag'>
-      <Link href={link}> {name} </Link>
-    </Box>
+    <Stack direction="row" className="tags" gap={1} my={1} >
+      {tagList?.map(({ tag, link }: ITag) => (
+        <Tag name={tag} link={link} key={link} />
+      ))}
+    </Stack>
   )
 }
+
+export default Tags

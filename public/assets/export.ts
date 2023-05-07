@@ -1,3 +1,4 @@
+export {default as logo} from './images/logo.svg'
 // categories images
 export { default as idea } from './images/idea.jpeg';
 export { default as art } from './images/idea.jpeg';
@@ -11,3 +12,5 @@ export { default as blogSlugBg } from './images/slug-bg.jpeg'
 export { default as blogFeature } from './images/feature-image.jpeg'
 // article images
 export { default as articleImage } from './images/article-image.jpeg'
+// featured post
+export { default as featuredImage1 } from './images/featured-post-1.jpeg'

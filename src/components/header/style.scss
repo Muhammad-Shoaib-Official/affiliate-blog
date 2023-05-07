@@ -1,0 +1,16 @@
+.header {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 1)), url("../../../public//assets/images/slug-bg.jpeg");
+
+  .MuiInputBase-root {
+    border-radius: 30px !important;
+  }
+
+  .excerpt {
+    font-size: 1.4rem;
+    font-weight: 500;
+    max-width: 650px;
+    text-align: center;
+    opacity: 0.75;
+    margin-top: 0rem;
+  }
+}

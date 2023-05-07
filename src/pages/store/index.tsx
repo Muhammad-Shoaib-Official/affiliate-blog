@@ -1,8 +1,9 @@
 import React from 'react'
+import StoreModule from '../../modules/store'
 
 const Store = () => {
     return (
-        <div>Store</div>
+        <StoreModule />
     )
 }
 

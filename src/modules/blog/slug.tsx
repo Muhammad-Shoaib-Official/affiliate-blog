@@ -13,7 +13,20 @@ import {
   Facebook,
   ControlPointDuplicate,
 } from "@mui/icons-material";
-
+const tagList = [
+  {
+    tag: "lifestyle",
+    link: "#"
+  },
+  {
+    tag: "eco",
+    link: "#"
+  },
+  {
+    tag: "health",
+    link: "#"
+  },
+]
 export default function BlogSlugModule() {
   return (
     <>
@@ -37,11 +50,7 @@ export default function BlogSlugModule() {
               felis libero, congue quis ipsum et, lacinia maximus eros.
               Vestibulum ante ipsum primis in faucibus.
             </Typography>
-            <Box className="tags">
-              {["lifestyle", "eco", "business"].map((tag, i) => (
-                <Tags name={tag} link={`#`} key={i} />
-              ))}
-            </Box>
+            <Tags tagList={tagList} />
             <hr className="borderline" />
 
             <List className="social">
